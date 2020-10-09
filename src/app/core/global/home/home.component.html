@@ -1,0 +1,466 @@
+<nav
+  id="navbar-main"
+  class="navbar navbar-horizontal navbar-main navbar-expand-lg navbar-dark"
+  style="background-color: #ffffff;"
+>
+<img class="logo" [src]="imgLogo2" style="height:60px">
+    <h3 class="ml-4"><i>Selamat Datang ke</i><br><b>KPKT - SPATIAL CHARACTERISTICS OF RURAL MALAYSIA SYSTEM<br>(S-CHARMs)</b></h3>
+    <div
+      class="navbar-collapse navbar-custom-collapse collapse ml-8"
+      id="collapseBasic"
+    >
+            <div class="text-align-bottom-right">
+                <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
+                    <div class="form-group mb-0" >
+                        <div class="input-group input-group-alternative input-group-merge">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-search"></i></span>
+                            </div>
+                            <input 
+                                class="form-control" 
+                                placeholder="Search" 
+                                type="text" 
+                                
+                            />
+                        </div>
+                    </div>
+                    <button type="button" class="close" data-action="search-close"
+                        data-target="#navbar-search-main" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </form>
+            </div>
+
+      <hr class="d-lg-none" />
+      <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+        <li class="nav-item">
+          <a
+            class="nav-link nav-link-icon"
+            href="#"
+            target="_blank"
+            tooltip="Like us on Facebook"
+          >
+            <i class="fab fa-facebook-square text-blue"></i>
+            <span class="nav-link-inner--text d-lg-none text-dark"
+              >Facebook</span
+            >
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link nav-link-icon"
+            href="#"
+            target="_blank"
+            tooltip="Follow us on Instagram"
+          >
+            <i class="fab fa-instagram text-danger"></i>
+            <span class="nav-link-inner--text d-lg-none text-dark"
+              >Instagram</span
+            >
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link nav-link-icon"
+            href="#"
+            target="_blank"
+            tooltip="Follow us on Twitter"
+          >
+            <i class="fab fa-twitter-square text-default"></i>
+            <span class="nav-link-inner--text d-lg-none text-dark"
+              >Twitter</span
+            >
+          </a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown" dropdown>
+            <a
+              href="javascript:void(0)"
+              id="navbarDropdownMenuLink2"
+              dropdownToggle
+            >
+              <img
+                width="17px"
+                height="15px"
+                src="assets/img/icons/flags/MY.png"
+              />
+            </a>
+            <ul
+              aria-labelledby="navbarDropdownMenuLink2"
+              *dropdownMenu
+              class="dropdown-menu"
+            >
+              <li>
+                <a class="dropdown-item" href="javascript:void(0)">
+                  <img
+                    width="17px"
+                    height="15px"
+                    src="assets/img/icons/flags/GB.png"
+                  />
+                  EN
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item active" href="javascript:void(0)">
+                  <img
+                    width="17px"
+                    height="15px"
+                    src="assets/img/icons/flags/MY.png"
+                  />
+                  BM
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  
+</nav>
+
+<nav
+  id="navbar-main"
+  class="navbar navbar-horizontal navbar-main navbar-expand-lg navbar-dark"
+  style="background-color: #c0e7e5;"
+>
+  <div class="container">
+    <div
+      class="navbar-collapse navbar-custom-collapse collapse"
+      id="collapseBasic"
+    >
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" style="cursor: pointer;">
+          <a
+            class="nav-link text-dark"
+            routerLinkActive="active"
+            style="cursor: pointer;"
+            (click)="navigatePage('home')"
+          >
+            <span class="nav-link-inner--text">Menu Utama</span>
+          </a>
+        </li>
+        <li class="nav-item" style="cursor: pointer;">
+          <a
+            class="nav-link text-dark"
+            routerLinkActive="active"
+            style="cursor: pointer;"
+            (click)="navigatePage('faq')"
+          >
+            <span class="nav-link-inner--text">Soalan Lazim</span>
+          </a>
+        </li>
+        <li class="nav-item" style="cursor: pointer;">
+          <a
+            class="nav-link text-dark"
+            routerLinkActive="active"
+            style="cursor: pointer;"
+            (click)="navigatePage('about-us')"
+          >
+            <span class="nav-link-inner--text">Mengenai Kami</span>
+          </a>
+        </li>
+        <li class="nav-item" style="cursor: pointer;">
+          <a
+            class="nav-link text-dark"
+            routerLinkActive="active"
+            style="cursor: pointer;"
+            (click)="navigatePage('survey')"
+          >
+            <span class="nav-link-inner--text">Maklum Balas</span>
+          </a>
+        </li>
+        <!-- <li class="nav-item" style="cursor: pointer;">
+          <a
+            class="nav-link text-dark"
+            routerLinkActive="active"
+            style="cursor: pointer;"
+            (click)="navigatePage('refund')"
+          >
+            <span class="nav-link-inner--text">Refund</span>
+          </a>
+        </li> -->
+        <!-- <li class="nav-item" style="cursor: pointer;">
+          <a
+            class="nav-link text-dark"
+            routerLinkActive="active"
+            style="cursor: pointer;"
+            (click)="navigatePage('complaint')"
+          >
+            <span class="nav-link-inner--text">Complaint</span>
+          </a>
+        </li> -->
+      </ul>
+      <hr class="d-lg-none" />
+      <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+        <li class="nav-item d-none text-white d-lg-block ml-lg-4">
+          <a (click)="navigatePage('login')" style="cursor: pointer;">
+            <span class="btn-inner--icon">
+              <i class="fas fa-user text-dark"></i>
+            </span>
+            <span class="nav-link-inner--text text-dark"
+              >&nbsp;&nbsp;Log Masuk</span
+            >
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="main-content">
+  <!-- Header -->
+  <carousel>
+    <slide>
+      <img
+        src="assets/img/logo/wb2-s4.png"
+        alt="first slide"
+        style="display: block; width: 100%; height: 300px;"
+      />
+    </slide>
+    <slide>
+      <img
+        src="assets/img/logo/PBTPay-01_0.png"
+        alt="second slide"
+        style="display: block; width: 100%; height: 300px;"
+      />
+    </slide>
+    <slide>
+      <img
+        src="assets/img/logo/Banner iTegur Khairil.jpg"
+        alt="second slide"
+        style="display: block; width: 100%; height: 300px;"
+      />
+    </slide>
+  </carousel>
+
+  <div class="header pt-3 pb-3" style="background-color: #c0e7e5;">
+    <div class="container mt-5 mb-5">
+      <div class="header-body">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-secondary">
+                    <h3 class="m-0">Berita Terkini</h3>
+                </div>
+                <div class="card-body mb--4">
+                    <div class="row">
+                    <div class="col-md-6">
+                        <carousel>
+                            <slide>
+                            <img
+                                src="assets/img/logo/EULlE4SUMAAeIx8.jpeg"
+                                alt="first slide"
+                                style="display: block; width: 100%; height: 300px;"
+                            />
+                            </slide>
+                            <slide>
+                            <img
+                                src="assets/img/logo/rumah_tinggal.jpg"
+                                alt="second slide"
+                                style="display: block; width: 100%; height: 300px;"
+                            />
+                            </slide>
+                            <slide>
+                            <img
+                                src="assets/img/logo/15-OGOS-2020-BERITA-SEMASA-KEBUN-KOMUNITI-BANTU-PENDUDUK-PPR.png"
+                                alt="second slide"
+                                style="display: block; width: 100%; height: 300px;"
+                            />
+                            </slide>
+                        </carousel>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header mb-1" style="background-color: #219ca0;">
+                                <h5 class="m-0">Kebun komuniti bantu penduduk PPR tambah pendapatan</h5>
+                                <div class="text-right"><a class="btn btn-sm btn-neutral mt-2 text-dark text-right" href="javascript:void(0)">Selanjutnya..</a></div>
+                            </div>
+                            <div class="card-header mb-1" style="background-color: #219ca0;">
+                                <h5 class="m-0">Majlis penyampaian sumbangan kepada keluarga PB Baharuddin bin Sapuan</h5>
+                                <div class="text-right"><a class="btn btn-sm btn-neutral mt-2 text-dark text-right" href="javascript:void(0)">Selanjutnya..</a></div>
+                            </div>
+                            <div class="card-header mb-1" style="background-color: #219ca0;">
+                                <h5 class="m-0">Lawatan YBM ke Sungai Putih, Ampang</h5>
+                                <div class="text-right"><a class="btn btn-sm btn-neutral mt-2 text-dark text-right" href="javascript:void(0)">Selanjutnya..</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-secondary">
+                    <h3 class="m-0">Pengumuman</h3>
+                </div>
+                <div class="card-body">
+                    <accordion>
+                      <accordion-group heading="Header" class="text-dark">
+                        This content is straight in the template.
+                      </accordion-group>
+                      <accordion-group heading="Papan Iklan Kredit Komuniti">
+                        <p>Content 1</p>
+                      </accordion-group>
+                      <accordion-group heading="Content 2">
+                        <p>Content 2</p>
+                      </accordion-group>
+                    </accordion>
+                </div>
+            </div>
+            <br />
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="py-5 pt-5 pb-3" style="background-color: #219ca0;">
+    <div class="text-center text-dark pb-4">
+      <h1 class="text-dark">Announcement</h1>
+    </div>
+    <div class="col-lg-10 col-md-8 mx-auto">
+      <div class="card card-blog card-plain blog-horizontal">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card-image shadow">
+              <a href="javascript:;">
+                <img
+                  class="img"
+                  width="100%"
+                  src="assets/img/brand/announcement1.png"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="card-body">
+              <h3 class="card-title">
+                <a href="javascript:;">
+                  Fenomena Cuaca
+                </a>
+              </h3>
+              <p class="card-description">
+                Cuaca di Malaysia dicirikan oleh dua rejim monsun iaitu Monsun
+                Barat Daya yang bermula dari akhir bulan Mei ke September, dan
+                Monsun Timur Laut dari bulan November ke Mac. Tempoh peralihan
+                di antara dua monsun ini dikenali sebagai musim perantaraan
+                monsun....
+                <a href="javascript:;"> Read More </a>
+              </p>
+              <div class="author">
+                <img
+                  alt="..."
+                  class="avatar"
+                  src="assets/img/default/profile.png"
+                />
+
+                <div class="text">
+                  <span class="name"> Tom Hanks </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-blog card-plain blog-horizontal">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card-image shadow">
+              <a href="javascript:;">
+                <img
+                  class="img"
+                  width="100%"
+                  src="assets/img/brand/announcement2.gif"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="card-body">
+              <h3 class="card-title">
+                <a href="javascript:;">
+                  Fenomena Cuaca
+                </a>
+              </h3>
+              <p class="card-description">
+                Cuaca di Malaysia dicirikan oleh dua rejim monsun iaitu Monsun
+                Barat Daya yang bermula dari akhir bulan Mei ke September, dan
+                Monsun Timur Laut dari bulan November ke Mac. Tempoh peralihan
+                di antara dua monsun ini dikenali sebagai musim perantaraan
+                monsun....
+                <a href="javascript:;"> Read More </a>
+              </p>
+              <div class="author">
+                <img
+                  alt="..."
+                  class="avatar"
+                  src="assets/img/default/profile.png"
+                />
+
+                <div class="text">
+                  <span class="name"> Tom Hanks </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-blog card-plain blog-horizontal">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card-image shadow">
+              <a href="javascript:;">
+                <img
+                  class="img"
+                  width="100%"
+                  src="assets/img/brand/announcement3.gif"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="card-body">
+              <h3 class="card-title">
+                <a href="javascript:;">
+                  Fenomena Cuaca
+                </a>
+              </h3>
+              <p class="card-description">
+                Cuaca di Malaysia dicirikan oleh dua rejim monsun iaitu Monsun
+                Barat Daya yang bermula dari akhir bulan Mei ke September, dan
+                Monsun Timur Laut dari bulan November ke Mac. Tempoh peralihan
+                di antara dua monsun ini dikenali sebagai musim perantaraan
+                monsun....
+                <a href="javascript:;"> Read More </a>
+              </p>
+              <div class="author">
+                <img
+                  alt="..."
+                  class="avatar"
+                  src="assets/img/default/profile.png"
+                />
+
+                <div class="text">
+                  <span class="name"> Tom Hanks </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- Footer -->
+<footer>
+    <livechat-widget
+      #liveChatWidget
+      licenseId="11082047"
+      (onChatLoaded)="onChatLoaded($event)"
+      (onChatWindowOpened)="onChatWindowOpened()"
+      (onChatWindowMinimized)="onChatWindowMinimized()"
+      [visitor]=""
+      [params]=""
+    ></livechat-widget>
+</footer>

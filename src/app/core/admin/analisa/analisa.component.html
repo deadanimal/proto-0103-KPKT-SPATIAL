@@ -1,0 +1,173 @@
+<!--Header Section-->
+<div class="header pb-6">
+    <div class="container-fluid">
+        <div class="header-body">
+            <div class="row align-items-center py-4">
+                <div class="col-lg-6 col-7">
+                    <h6 class="h2 text-dark d-inline-block mb-0">Analisa Kemudahan Awam</h6>
+
+                    <nav aria-label="breadcrumb" class=" d-none d-md-inline-block ml-md-4">
+                        <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                            <li class=" breadcrumb-item">
+                                <a href="javascript:void(0)"> <i class="fas fa-tasks text-dark"> </i> </a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+				<div class="col-xl-4 col-md-6">
+					<div class="card card-stats">
+						<div class="card-body bg-gradient-red">
+							<div class="row">
+								<div class="col">
+									<h5 class="card-title text-uppercase text- mb-0">
+										Mampan
+									</h5>
+
+									<span class="h2 font-weight-bold mb-0"> 350,897 </span>
+								</div>
+
+								<div class="col-auto">
+									<div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+										<i class="ni ni-active-40"> </i>
+									</div>
+								</div>
+							</div>
+
+							<p class="mt-3 mb-0 text-sm">
+								<span class="text-success mr-2">
+									<i class="fa fa-arrow-up"> </i> 3.48%
+								</span>
+
+								<span class="text-nowrap"> Sejak bulan lepas </span>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xl-4 col-md-6">
+					<div class="card card-stats">
+						<div class="card-body bg-gradient-yellow">
+							<div class="row">
+								<div class="col">
+									<h5 class="card-title text-uppercase text- mb-0">
+										Sederhana Mampan
+									</h5>
+
+									<span class="h2 font-weight-bold mb-0"> 2,356 </span>
+								</div>
+
+								<div class="col-auto">
+									<div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
+										<i class="ni ni-chart-pie-35"> </i>
+									</div>
+								</div>
+							</div>
+
+							<p class="mt-3 mb-0 text-sm">
+								<span class="text-success mr-2">
+									<i class="fa fa-arrow-up"> </i> 3.48%
+								</span>
+
+								<span class="text-nowrap"> Sejak bulan lepas </span>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xl-4 col-md-6">
+					<div class="card card-stats">
+						<div class="card-body bg-gradient-green">
+							<div class="row">
+								<div class="col">
+									<h5 class="card-title text-uppercase text- mb-0">
+										Rendah Mampan
+									</h5>
+
+									<span class="h2 font-weight-bold mb-0"> 924 </span>
+								</div>
+
+								<div class="col-auto">
+									<div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
+										<i class="ni ni-money-coins"> </i>
+									</div>
+								</div>
+							</div>
+
+							<p class="mt-3 mb-0 text-sm">
+								<span class="text-warning mr-2">
+									<i class="fa fa-arrow-down"> </i> 3.48%
+								</span>
+
+								<span class="text-nowrap"> Sejak bulan lepas </span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+    </div>
+</div>
+
+<!--Body Section-->
+<div class="container-fluid mt--6">
+    <div class="row"> <!--Map Section-->
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header bg-secondary">
+                    <h3 class="m-0">Peta</h3>
+                </div>
+                <div class="card-body">
+                    
+                        <div
+                          style="height: 400px;"
+                          leaflet
+                          [leafletOptions]="options"
+                          [leafletLayers]="layers">
+                        </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+        <div class="col-md-12 col-lg-6">
+            <div class="card">
+                <div class="card-header bg-secondary">
+                    <h3 class="m-0">Status kemudahan awam</h3>
+                    <div class="mt--4 text-right">
+                        <a class="btn btn-sm btn-neutral" (click)="print()">
+                            Cetak
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="chart">
+                        <div class="amchart" id="chartKemudahan"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-6">
+            <div class="card">
+                <div class="card-header bg-secondary">
+                    <h3 class="m-0">Analisis Mampan</h3>
+                    <div class="mt--4 text-right">
+                        <a class="btn btn-sm btn-neutral" (click)="print()">
+                            Cetak
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="chart">
+                        <div class="amchart" id="chartRisiko"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
