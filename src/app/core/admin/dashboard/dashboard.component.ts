@@ -47,12 +47,47 @@ export class DashboardComponent implements OnInit, OnDestroy {
     });
     var popup = new mapboxgl.Popup({ closeOnClick: true })
     .setLngLat([101.579524, 3.095902])
-    .setHTML('<p>Hello</p>')
+    .setHTML('<p>380</p>')
     .addTo(map);
 
-    var popup1 = new mapboxgl.Popup({ closeOnClick: false })
-    .setLngLat([100.626680, 5.935314])
-    .setHTML('<h1>Hello World!</h1>')
+    var kedah = new mapboxgl.Popup({ closeOnClick: true })
+    .setLngLat([100.879266, 5.620274])
+    .setHTML('<p>1917</p>')
+    .addTo(map);
+
+    var perlis = new mapboxgl.Popup({ closeOnClick: true })
+    .setLngLat([100.264216, 6.670148])
+    .setHTML('<p>261</p>')
+    .addTo(map);
+
+    var perak = new mapboxgl.Popup({ closeOnClick: true })
+    .setLngLat([101.092234, 3.915394])
+    .setHTML('<p>2329</p>')
+    .addTo(map);
+
+    var penang = new mapboxgl.Popup({ closeOnClick: true })
+    .setLngLat([100.246907, 5.371204])
+    .setHTML('<p>547</p>')
+    .addTo(map);
+
+    var johor = new mapboxgl.Popup({ closeOnClick: true })
+    .setLngLat([103.756931, 1.522090])
+    .setHTML('<p>1958</p>')
+    .addTo(map);
+
+    var pahang = new mapboxgl.Popup({ closeOnClick: true })
+    .setLngLat([102.908760,3.426748])
+    .setHTML('<p>2373</p>')
+    .addTo(map);
+
+    var terengganu = new mapboxgl.Popup({ closeOnClick: true })
+    .setLngLat([103.436104, 4.358421])
+    .setHTML('<p>1333</p>')
+    .addTo(map);
+
+    var kelantan = new mapboxgl.Popup({ closeOnClick: true })
+    .setLngLat([102.356836, 5.910219])
+    .setHTML('<p>1824</p>')
     .addTo(map);
 
     map.scrollZoom.disable();
