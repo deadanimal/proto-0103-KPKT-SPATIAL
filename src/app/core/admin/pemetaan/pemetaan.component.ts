@@ -42,10 +42,6 @@ export class PemetaanComponent implements OnInit {
       zoom: 14,
     });
 
-    var popup = new mapboxgl.Popup({ closeOnClick: true })
-    .setLngLat([101.579524, 3.095902])
-    .setHTML('<h1>Hello World!</h1>')
-    .addTo(map);
   
     var draw = new MapboxDraw({
       displayControlsDefault: false,

@@ -55,10 +55,6 @@ export class DashboardComponent implements OnInit, OnDestroy {
     .setHTML('<p>1917</p>')
     .addTo(map);
 
-    var perlis = new mapboxgl.Popup({ closeOnClick: true })
-    .setLngLat([100.264216, 6.670148])
-    .setHTML('<p>261</p>')
-    .addTo(map);
 
     var perak = new mapboxgl.Popup({ closeOnClick: true })
     .setLngLat([101.092234, 3.915394])
